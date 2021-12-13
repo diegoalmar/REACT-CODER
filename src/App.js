@@ -1,10 +1,16 @@
-import Header from "./Componentes/Navbar"
+import Header from "./Componentes/header/Navbar"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App () {
+    const links = [
+        {href:"#",name: "+Info"},
+        {href:"#",name: "Contáctenos"}
+         ]
+
     return (
        <>
-            <Header/>
+            <Header nombre=" Diego" edad="" links={links}/>
             <main></main>
            
         </>
