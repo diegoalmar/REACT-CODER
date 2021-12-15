@@ -11,7 +11,7 @@ const Header = (props) => {
         <a className="navbar-brand" href="#">
             <img src="/hetlog.png" alt="" width="60" height="30"/>
            </a>
-           <a className="navbar-brand" href="#">Bienvenido{props.nombre} a Moda Urbana</a>
+           <a className="navbar-brand" href="#">{props.nombre}</a>
            <button className="navbar-toggler" type="button"data-bs-toggle="collapse"
              data-bs-target="#navbarNavDropdown"aria-controls="navbarNavDropdown"aria-expanded="false"aria-label="Toggle navigation">
                  <span className="navbar-toggler-icon"></span>
