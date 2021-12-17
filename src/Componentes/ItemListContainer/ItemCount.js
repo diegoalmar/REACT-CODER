@@ -2,23 +2,25 @@ import React from "react";
 import { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
+
 const ItemCount = ({ stock, initial, onAdd }) => {
 
-    const [contador, setContador] = useState(initial);
+    let [contador, setContador] = useState(initial);
 
     const sumar = () => {
-
         setContador(contador + 1)
     }
 
     const restar = () => {
-
         setContador(contador - 1)
     }
 
     const agregarItem = () => {
         console.log("Agrega un item con onAdd")
+        setContador(initial)
         onAdd(contador)
+        
     }
 
     return (
@@ -27,10 +29,10 @@ const ItemCount = ({ stock, initial, onAdd }) => {
             <div className="card">
                 <img src="/camisa2.jpg" class="card-img-top" alt="..." />
                 <div className="card-body">
-                    <h5 class="card-title">Camisa LINO CRUDO</h5>
-                    <p class="card-text">Camisa manga corta de Fibrana, súper fresca y liviana. Logo de la marca bordado, etiqueta y botones teñidos a tono</p>
+                    <h5 className="card-title">Camisa LINO CRUDO</h5>
+                    <p className="card-text">Camisa manga corta de Fibrana, súper fresca y liviana. Logo de la marca bordado, etiqueta y botones teñidos a tono</p>
                     <p> <strong>$5.290</strong> </p>
-                    <select class="form-select" aria-label="Default select example">
+                    <select className="form-select" aria-label="Default select example">
                         <option selected>Elige tu Talle</option>
                         <option value="1">S</option>
                         <option value="2">M</option>
