@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //import Main from "./Componentes/main/Main";
 import ItemCount from "./Componentes/ItemListContainer/ItemCount";
 import ItemListContainer from "./Componentes/ItemListContainer/ItemListContainer";
+import ItemDetailContainer from "./Componentes/ItemListContainer/ItemDetailContainer";
+import ItemDetail from "./Componentes/ItemListContainer/ItemDetail";
 
 
 function App () {
@@ -16,8 +18,8 @@ function App () {
     return (
        <>
             <Header nombre="Moda Urbana" edad="" links={links}/>
-            
             <ItemListContainer/>
+            <ItemDetailContainer/>
            
         </>
     )

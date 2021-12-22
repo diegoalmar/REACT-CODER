@@ -1,4 +1,4 @@
-const Item = (item)=>{
+const Item = ({item})=>{
     return(
         <article>
             <h3>{item.nombre}</h3>
